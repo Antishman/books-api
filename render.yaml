@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: books-api
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 16.x
